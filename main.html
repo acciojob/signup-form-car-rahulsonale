@@ -11,19 +11,24 @@
 	<header>
 		<h1>Sign up form</h1>
 	</header>
-
+	<form method="post"
 	<div>
-		Name: <input  type="text",id="name" placeholder="Your name" required>
+		<label for="name">Name :</label>
+		<input  type="text",id="name" name="name" placeholder="Your name" required>
 		<br></br>
-		Email: <input type="email",id="email" placeholder="Email" required>
+		<label for="Email">Email :</label>
+		<input type="email" name="Email"  id="email" placeholder="Email" required>
 		<br></br>
-	    <label for="Gender">
+	    <label>
 		    Gender:
 		</label>
-			<input  name="Gender" type="radio" id="gender_m" value="male">Male 
-			<input name="Gender" type="radio" id="gender_f" value="female">Female
+			<input  name="Gender" type="radio" id="gender_m" value="male">
+			<label for="gender_m">Male</label>
+			<input name="Gender" type="radio" id="gender_f" value="female">
+			<label for="gender_f">Female</label>
 		<br></br>
-		<select name=cars id="cars">
+		<label for="cars">Car Brands</label>
+		<select name=cars id="cars" required>
 			<option value="Maruti">
 				Maruti
 			</option>
@@ -38,19 +43,27 @@
 			</option>
 		</select>
 		<br></br>
-		Age : <input Type="number" placeholder="Your age" id="age" required>
+		<label for="age">Age : </label>
+		<input Type="number" name="age" placeholder="Your age" id="age" required>
 		<br></br>
-		DOB : <input type="date" id="dob" required>
+		<label for="dob">DOB :</label>
+	    <input type="date" id="dob" required>
 		<br></br>
-		Phone Number : <input type="Tel" id="tel" placeholder="xxx-xxx-xxxx">
+		<label for="tel"> Phone :</label>
+		<input type="Tel" id="tel" placeholder="xxx-xxx-xxxx">
 		<br></br>
-		Password : <input type="password" id="password" placeholder="password" required>
+		<label for="password">Password</label>
+		<input type="password" id="password" placeholder="password" required>
 		<br></br>
-		<input type="checkbox" id="tos" required>I agree to the tos
+		<input type="checkbox" id="tos" required>
+		<label for=tos>I agree to the tos</label>
+		
 		<br></br>
-		<button>
+		<button type="submit">
 			sign up
 		</button>
+
+		</post>
 		
 		
 		
